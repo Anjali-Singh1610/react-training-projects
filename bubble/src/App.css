@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.score-left {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.timer-right {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.controls {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.controls button {
+  padding: 8px 15px;
+  border: none;
+  background: #ff4b5c;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: #ff2e43;
+}
+
+.bubble {
+  margin-top: 80px;
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: left 0.3s ease-out, top 0.3s ease-out, transform 0.2s;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.bubble:hover {
+  transform: scale(1.1);
+}
